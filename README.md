@@ -1,19 +1,19 @@
 # Datarize Frontend 과제 전형
 
-## 설계방향
+### 설계방향
 
 - 전체 판을 Dashboard 컴포넌트라고 정의하고, 그 안에 들어가는 데이터를 표시하는 단위(차트, 목록 등)를 Card 컴포넌트라고 한다.
 - DashBoard는 Card 컴포넌트로 구성하며 총 2개의 컴포넌트를 갖습니다.
-  > PurchaseFrequencyByPriceChartCard : 가격대별 구매 빈도 차트
-  > TopCustomersListCard : 가장 많이 구매한 고객 목록
+  > - PurchaseFrequencyByPriceChartCard : 가격대별 구매 빈도 차트
+  > - TopCustomersListCard : 가장 많이 구매한 고객 목록
 - components폴더는 공통 컴포넌트를 저장하는 곳
-  > CustomerDetailModal : 고객 구매 상세정보를 확인하는 Modal
-  > Table : react-table을 사용하는 공용 table로 확장될 컴포넌트
-  > Modal : 공용 모달
-  > ...(나머지는 생략)
+  > - CustomerDetailModal : 고객 구매 상세정보를 확인하는 Modal
+  > - Table : react-table을 사용하는 공용 table로 확장될 컴포넌트
+  > - Modal : 공용 모달
+  > - ...(나머지는 생략)
 - '고객 ID 기반 상세 기능'의 경우 modal 형태로 구현, 추가적인 정보를 보여주고 싶었으나 api의 데이터가 한정적이어서 임의로 props를 전달하는 방향으로 개발하였습니다. modal에 id만 넘겨서 모두 api의 정보를 modal을 그릴 수 있는 방향이 좋을 것 같습니다.
 
-## 실행방법
+### 실행방법
 
 ```cmd
 cd apps
