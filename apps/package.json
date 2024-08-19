@@ -5,6 +5,7 @@
     "backend"
   ],
   "scripts": {
+    "front": "yarn workspace frontend",
     "start-server": "yarn workspace backend start",
     "start-client": "yarn workspace frontend dev"
   },

@@ -1,0 +1,6 @@
+export { default as CustomerDetailModal } from './CustomerDetailModal'
+export { default as Error } from './Error'
+export { default as Loading } from './Loading'
+export { default as NoData } from './NoData'
+export { default as Modal } from './Modal'
+export { default as Table } from './Table'
